@@ -12,17 +12,17 @@ module.exports = function (plop) {
         actions: [
             {
                 type: "add",
-                path: "../src/presentation/components/content/{{ pascalCase name }}/index.tsx",
+                path: "../src/components/{{ pascalCase name }}/index.tsx",
                 templateFile: "templates/index.tsx.hbs",
             },
             {
                 type: "add",
-                path: "src/components/{{ pascalCase name }}/{{ pascalCase name }}.styles.ts",
+                path: "../src/components/{{ pascalCase name }}/{{ pascalCase name }}.styles.ts",
                 templateFile: "templates/styles.ts.hbs",
             },
             {
                 type: "add",
-                path: "src/components/{{ pascalCase name }}/{{ pascalCase name }}.types.ts",
+                path: "../src/components/{{ pascalCase name }}/{{ pascalCase name }}.types.ts",
                 templateFile: "templates/types.ts.hbs",
             },
         ],
