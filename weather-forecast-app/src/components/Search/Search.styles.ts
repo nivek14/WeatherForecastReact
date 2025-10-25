@@ -13,7 +13,6 @@ export const SearchContainer = styled.input`
     position: relative;
     &:focus{
         outline: none;
-        border: none;
     }
 `;
 
