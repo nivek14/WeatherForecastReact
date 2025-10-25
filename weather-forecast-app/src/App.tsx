@@ -1,4 +1,5 @@
 import * as S from './App.styles';
+import Capitals from './components/Capitals';
 import Divider from './components/Divider';
 import Search from './components/Search';
 import Title from './components/Title';
@@ -10,6 +11,7 @@ function App() {
         <Title title='Previsão do tempo' />
         <Search placeholder='Insira aqui o nome da cidade' />
         <Divider />
+        <Capitals />
       </S.ContentContainer>
     </S.PageContainer>
   );
