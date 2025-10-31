@@ -2,10 +2,12 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display: flex;
+    flex-direction: column;
+    gap: 24px;
 `;
 
 export const SearchContainer = styled.input`
-    width: 350px;
+    width: 400px;
     height: 56px;
     padding-left: 24px;
     border: 1px solid #fff;
