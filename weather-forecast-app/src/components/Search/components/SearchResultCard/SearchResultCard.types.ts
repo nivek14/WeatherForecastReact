@@ -7,4 +7,5 @@ export type Props = {
     temp_max: number;
     humidity: number;
     speed: number;
+    showCard: boolean
 };

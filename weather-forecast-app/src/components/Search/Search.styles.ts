@@ -6,6 +6,11 @@ export const Container = styled.div`
     gap: 24px;
 `;
 
+export const InputWrapper = styled.div`
+    position: relative;
+    width: 400px;
+`;
+
 export const SearchContainer = styled.input`
     width: 400px;
     height: 56px;
@@ -17,7 +22,9 @@ export const SearchContainer = styled.input`
 `;
 
 export const SearchIcon = styled.div`
-    position: relative;
-    top: 20px;
-    right: 45px;
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
 `;

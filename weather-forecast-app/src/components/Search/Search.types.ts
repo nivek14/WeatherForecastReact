@@ -4,9 +4,11 @@ export type Props = {
 
 export type SearchWeather = {
     name: string;
-    weather: {
-        description: string;
-    }
+    weather: [
+        {
+            description: string;
+        }
+    ]
     main: {
         feels_like: number
         temp: number;

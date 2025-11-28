@@ -41,25 +41,28 @@ export const Search = (props: Props) => {
             {weather && (
                 <SearchResultCard
                     name={weather.name}
-                    description={weather.weather.description}
+                    description={weather.weather[0].description}
                     feels_like={weather.main.feels_like}
                     temp={weather.main.temp}
                     temp_min={weather.main.temp_min}
                     temp_max={weather.main.temp_max}
                     humidity={weather.main.humidity}
                     speed={weather.wind.speed}
+                    showCard={true}
                 />
             )}
-            <S.SearchContainer
-                type='text'
-                placeholder={placeholder}
-                name="search"
-                id="search-input"
-                value={searchValue}
-                onChange={(e) => setSearchValue(e.target.value)} />
-            <S.SearchIcon onClick={() => handleSearch()}>
-                <SearchIcon />
-            </S.SearchIcon>
+            <S.InputWrapper>
+                <S.SearchContainer
+                    type='text'
+                    placeholder={placeholder}
+                    name="search"
+                    id="search-input"
+                    value={searchValue}
+                    onChange={(e) => setSearchValue(e.target.value)} />
+                <S.SearchIcon onClick={() => handleSearch()}>
+                    <SearchIcon />
+                </S.SearchIcon>
+            </S.InputWrapper>
         </S.Container>
     );
 };
