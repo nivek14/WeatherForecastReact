@@ -1,8 +1,7 @@
 export type Props = {
     name: string;
-    country: string;
-    state: string;
     description: string;
+    feels_like: number
     temp: number;
     temp_min: number;
     temp_max: number;
